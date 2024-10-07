@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epsilon 3 - Quote</title>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Request a Quote for Epsilon 3</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="features.html">Features</a>
+                <a href="options.html">Options</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="prices.html">Prices</a>
+                <a href="quote.html">Request a Quote</a>
+                <a href="credit.html">Credit</a>
+            </nav>
+            <center>
+                <p>Fill out the form to reserve your Mobile Suit.</p>
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="company">Company name:</label><br>
+                    <input type="text" id="company" name="company"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="phone">Phone number:</label><br>
+                    <input type="text" id="phone" name="phone"><br>
+                </form> 
+                <button id="submitButton" onclick="submitQuote()">Submit Quote Request</button> 
+                <div class="sumbissionStatus">
+                    <p id="submitted"></p>
+                </div>
+            </center>
+
+            <footer>
+                <p>© 2024 Epsilon Inc. | Email: <a href="mailto:bspig001@odu.edu">bspig001@odu.edu</a></p>
+            </footer>
+        </div>
+        <img src="images/logo.png" class="logo">
+
+        <script>
+            document.getElementById("submitButton").onclick = function() {submitQuote()};
+
+            function submitQuote() {
+                document.getElementById("submitted").innerHTML = "Quote Request Submitted. A representative will contact you shortly.";
+            }
+        </script>
+    </body>
+</html>    
